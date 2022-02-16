@@ -1,7 +1,10 @@
-import webbrowser
+# Write Python3 code here
+def numberOf2sinRange(n):
+	s = ""
+	for i in range(0,n+1):
+		s+=str(i)
+	return(list(s).count('8'))
 
-url = 'http://docs.python.org/'
-
-chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
-
-webbrowser.open_new_tab(url)
+# Driver code
+n = 2000000
+print(numberOf2sinRange(n))
